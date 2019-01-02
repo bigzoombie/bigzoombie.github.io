@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="zombie的主页">
 <meta property="og:description" content="丧尸打开了你的脑壳，失望的摇了摇头">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-02T08:09:10.461Z">
+<meta property="og:updated_time" content="2019-01-02T08:24:45.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo搭建博客">
 <meta name="twitter:description" content="丧尸打开了你的脑壳，失望的摇了摇头">
@@ -282,30 +282,18 @@
           </span>
 
           
-            <span class="post-category">
+
+          
             
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Diary/" itemprop="url" rel="index">
-                    <span itemprop="name">Diary</span>
-                  </a>
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
                 </span>
-
-                
-                
-              
-            </span>
-          
-
-          
+                <a href="/2019/01/02/使用hexo搭建博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/02/使用hexo搭建博客/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -442,15 +430,6 @@
               </div>
             
 
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">分类</span>
-                
-              </div>
             
 
             
@@ -647,6 +626,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'dFFSCX9AxsgYc5RG9UDVsJjA-gzGzoHsz',
+        appKey: 'a7PwH2kKqbDLmQmEDTDhwYRX',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
